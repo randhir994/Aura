@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0f1012">
+
+    <ScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:id="@+id/collegeEventAvailabeImage1"
+                    android:onClick="backButton"
+                    android:layout_marginTop="15dp"
+                    android:layout_gravity="start"
+                    android:src="@drawable/arrow" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="87dp"
+                    android:id="@+id/collegeEventAvailabeImage2"
+                    android:layout_gravity="center"
+                    android:src="@drawable/top_item" />
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_below="@id/collegeEventAvailabeImage2">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center|start"
+                        android:layout_weight="0.3">
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="match_parent"
+                            android:id="@+id/collegeEventAvailabeImage3"
+                            android:gravity="center"
+                            android:paddingTop="4dp"
+                            android:paddingBottom="4dp"
+
+                            android:layout_marginLeft="4dp"
+
+                            android:src="@drawable/user_icon" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:text="MADHUR"
+                            android:textSize="18sp"
+                            android:gravity="center"
+
+
+                            android:textStyle="bold"
+                            android:fontFamily="sans-serif-condensed"
+                            android:textColor="#ffff00"
+                            android:id="@+id/collegeEventAvailabeText1"/>
+
+
+
+                    </LinearLayout>
+
+
+
+
+                    <Button
+                        android:layout_width="60dp"
+                        android:layout_height="41dp"
+                        android:text="New Delhi"
+                        android:textSize="18sp"
+                        android:layout_weight="0.3"
+
+                        android:textStyle="bold"
+
+                        android:textColor="#001a00"
+
+                        android:fontFamily="sans-serif-condensed"
+                        android:id="@+id/pageButton1"
+                        android:background="@drawable/yellowbox"/>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center|end"
+                        android:layout_weight="0.3">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="JULY"
+                            android:textSize="20sp"
+
+
+                            android:textStyle="normal|bold"
+                            android:fontFamily="sans-serif-condensed"
+                            android:textColor="#ffff00"
+                            android:id="@+id/collegeEventAvailabeText2"/>
+
+
+                        <Button
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:text="12"
+                            android:textSize="28sp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+
+                            android:textStyle="bold"
+                            android:textColor="#001a00"
+                            android:fontFamily="sans-serif-condensed"
+                            android:id="@+id/pageButton2"
+                            android:background="@drawable/ring_button"/>
+
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SELECT YOUR MOST PREFERRED LOCATION"
+                android:textColor="#fffb2d"
+                android:layout_gravity="center"
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="17dp"
+                android:layout_marginTop="50dp"
+
+                android:textStyle="bold"/>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="100dp"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="10dp">
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:padding="10dp"
+                android:background="@drawable/whitebox"
+                android:id="@+id/mostLocation"
+
+                android:paddingRight="30dp" />
+
+
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+
+                    android:id="@+id/imageView5"
+                    android:src="@drawable/b"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginEnd="4dp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:id="@+id/calenderlayout">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CHOOSE YOUR DATE"
+                android:fontFamily="sans-serif-condensed"
+                android:layout_gravity="center"
+                android:textColor="#fffb2d"
+                android:textSize="20dp"
+                android:textIsSelectable="true"
+                android:textStyle="bold"
+                />
+                <CalendarView
+                android:layout_marginTop="20dp"
+                android:id="@+id/calendarView"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusedMonthDateColor="#ffff00"
+                android:background="@drawable/yellowbox"
+                android:transitionGroup="false"
+                android:backgroundTint="#fffb2d" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12 NOVEMBER 2015"
+                    android:textColor="#ffffff"
+                    android:fontFamily="sans-serif-condensed"
+                    android:layout_gravity="center"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+
+                    />
+            </LinearLayout>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="and"
+    android:layout_gravity="center"
+    android:textColor="#FF02CBE3"
+    android:textStyle="bold|italic"
+    android:layout_margin="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SELECT YOUR OTHER PREFERRED LOCATION"
+                android:textColor="#FF02CBE3"
+                android:fontFamily="sans-serif-condensed"
+                android:layout_gravity="center"
+
+
+                android:textSize="17dp"
+                android:textStyle="bold"/>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="100dp"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="10dp">
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:padding="10dp"
+
+                    android:background="@drawable/whitebox"
+                    android:id="@+id/otherLocation"
+                    android:paddingRight="30dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+
+                    android:id="@+id/imageView6"
+                    android:src="@drawable/b"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginEnd="4dp" />
+            </RelativeLayout>
+<CheckBox
+    android:layout_gravity="center"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Any other preferred location"
+    android:textColor="#FF02CBE3"
+    android:layout_margin="20dp"
+    android:buttonTint="#ffffff" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:id="@+id/nopicker"
+                android:visibility="gone">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CHOOSE YOUR DATE"
+                android:id="@+id/choose"
+                android:layout_gravity="center"
+
+                android:textColor="#fffb2d"
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="17dp"
+                android:textIsSelectable="true"
+                android:textStyle="bold" />
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal"
+
+                android:layout_margin="5dp">
+                <NumberPicker
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/numberPicker1"
+                    android:background="@drawable/whitebox"
+                    android:layout_margin="5dp" />
+                <NumberPicker
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/numberPicker2"
+                    android:background="@drawable/whitebox"
+                    android:layout_margin="5dp" />
+                <NumberPicker
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/numberPicker3"
+                    android:background="@drawable/whitebox"
+                    android:layout_margin="5dp" />
+
+            </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12 NOVEMBER 2015"
+                    android:textColor="#FF02CBE3"
+                    android:layout_gravity="center"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textSize="17dp"
+                    android:textStyle="bold"
+
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="WEDNESDAY"
+                    android:textColor="#FF02CBE3"
+                    android:layout_gravity="center"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textSize="17dp"
+                    android:textStyle="bold"
+
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                    android:text="NUMBER OF GUESTS"
+                android:layout_margin="10dp"
+                android:textColor="#fffb2d"
+                android:layout_gravity="center"
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="17dp"
+                android:textStyle="bold"
+
+                />
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginRight="100dp"
+                android:layout_marginLeft="100dp"
+                android:padding="10dp"
+                android:background="@drawable/whitebox"
+                android:id="@+id/nofguest"
+                android:layout_marginBottom="15dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PLEASE PROVIDE NUMBER OF PEOPLE ATTENDING THE EVENT"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textColor="#FF02CBE3"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                />
+
+<ImageView
+    android:layout_marginTop="50dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/save"
+    android:src="@drawable/saveandsearch"
+    android:layout_gravity="center"/>
+        </LinearLayout>
+</ScrollView>
+
+</LinearLayout>

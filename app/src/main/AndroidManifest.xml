@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.yusuf.finaltourapp">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".startPage">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".liveActivity" />
+        <activity android:name=".liveTour" />
+
+        <activity android:name=".editProfile" />
+        <activity android:name=".saveSetting" />
+        <activity android:name=".sign_in_two" />
+        <activity android:name=".tourlogin" />
+        <activity android:name=".signed_in" />
+        <activity android:name=".See_previous_Activity" />
+        <activity android:name=".CreateCorporate" />
+        <activity android:name=".CreateCorporate2" />
+        <activity android:name=".CreateCorporate3" />
+        <activity android:name=".location" />
+        <activity android:name=".guest" />
+        <activity android:name=".date" />
+        <activity android:name=".CreateTour" />
+        <activity android:name=".tour_creation_thank_you" />
+        <activity android:name=".tour_joining" />
+        <activity android:name=".Tour_Click" />
+        <activity android:name=".MainFolder" />
+        <activity android:name=".Ongoing_Tour" />
+        <activity android:name=".PersonPrivateTourView"/>
+        <activity android:name=".activity_page" />
+        <activity android:name=".activity_creation" />
+        <activity android:name=".thank_you" />
+        <activity android:name=".activity_join" />
+        <activity android:name=".joining_request_submited" />
+        <activity android:name=".college_event" />
+        <activity android:name=".select_college" />
+        <activity android:name=".image_page" />
+        <activity android:name=".image_page_intro" />
+        <activity android:name=".image_page_schedule" />
+
+        <activity android:name=".create_event" />
+        <activity android:name=".event_page_click" />
+        <activity android:name=".event_intro" />
+        <activity android:name=".event_food" />
+        <activity android:name=".event_facility" />
+        <activity android:name=".event_pic" />
+        <activity android:name=".event_condition">
+        </activity>
+    </application>
+
+</manifest>

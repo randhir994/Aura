@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/group4">
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MADHUR"
+                android:textSize="70sp"
+                android:layout_marginTop="40dp"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-condensed"
+                android:textColor="#ffff00"
+                android:id="@+id/signInText1"/>
+
+            <ImageView
+                android:layout_width="105dp"
+                android:layout_height="50dp"
+                android:id="@+id/signInImage1"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:src="@drawable/smart"
+                android:layout_marginBottom="40dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="EDIT PROFILE"
+                android:textSize="25sp"
+                android:layout_marginTop="40dp"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-condensed"
+                android:textColor="#ffff00"
+                android:id="@+id/signInText2"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SIGN OUT"
+                android:textSize="25sp"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-condensed"
+                android:textColor="#ffff00"
+                android:layout_marginBottom="30dp"
+                android:id="@+id/signInText3"/>
+
+            <ImageView
+                android:layout_width="105dp"
+                android:layout_height="50dp"
+                android:id="@+id/signInImage2"
+                android:layout_marginTop="50dp"
+                android:layout_gravity="center"
+                android:src="@drawable/smart"
+                android:layout_marginBottom="25dp"
+                />
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="160dp"
+                android:id="@+id/signInImage3"
+                android:layout_gravity="center"
+                android:src="@drawable/group2" />
+
+            <ImageView
+                android:layout_width="175dp"
+                android:layout_height="80dp"
+                android:id="@+id/signInImage4"
+                android:layout_gravity="center"
+                android:src="@drawable/group1" />
+
+            <ImageView
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/signInImage5"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="15dp"
+                android:src="@drawable/group3" />
+
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>

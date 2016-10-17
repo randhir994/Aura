@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/activity_background">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="190dp"
+                android:layout_height="82dp"
+                android:id="@+id/activityCreationImage1"
+                android:layout_marginTop="35dp"
+                android:layout_gravity="center"
+                android:src="@drawable/activity_creation" />
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:id="@+id/activityCreationImage2"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/vectorshover"
+                />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="25dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:singleLine="true"
+                android:hint="creater name"
+                android:textStyle="bold|italic"
+                android:textColorHint="#FFFF00"
+                android:textColor="#FFFF00"
+                android:id="@+id/activityCreationText1"
+                android:background="@drawable/textx"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp">
+
+                <Spinner
+                    android:id="@+id/activityCreationSpinner1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_gravity="center"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:spinnerMode="dropdown"
+                    android:popupBackground="@drawable/info_time3"
+                    android:background="@drawable/textx"
+                    />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:id="@+id/activityCreationImage3"
+                    android:src="@drawable/drop_icon_yellow"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginRight="8dp"
+                    />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp">
+
+                <Spinner
+                    android:id="@+id/activityCreationSpinner2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_gravity="center"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:spinnerMode="dropdown"
+
+                    android:popupBackground="@drawable/info_time3"
+                    android:background="@drawable/textx"
+                    android:entries="@array/activities"
+                    />
+
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:id="@+id/activityCreationImage4"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginRight="8dp"
+                    android:src="@drawable/drop_icon_yellow"
+                    android:layout_alignParentRight="true"
+
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp">
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_gravity="center"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:singleLine="true"
+                    android:inputType="numberDecimal"
+                    android:hint="no. of people alredy going"
+                    android:textColor="#FFFF00"
+                    android:textStyle="bold|italic"
+                    android:textColorHint="#FFFF00"
+                    android:id="@+id/activityCreationText2"
+                    android:background="@drawable/textx"
+                    />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/activityCreationText2"
+                    android:gravity="start"
+                    android:textStyle="normal"
+                    android:padding="5dp"
+                    android:text="Please tell the number of people already going with you"
+                    android:textSize="20sp"
+                    android:id="@+id/activityCreationView1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/time_info"
+                    android:textColor="#02cee5"
+                    android:visibility="gone"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp">
+
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_gravity="center"
+                    android:paddingLeft="10dp"
+                    android:textColor="#FFFF00"
+                    android:inputType="numberDecimal"
+                    android:paddingRight="10dp"
+                    android:singleLine="true"
+                    android:hint="no. of people need"
+                    android:textColorHint="#FFFF00"
+                    android:textStyle="bold|italic"
+                    android:id="@+id/activityCreationText3"
+                    android:background="@drawable/textx"
+                    />
+
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/activityCreationText3"
+                    android:gravity="start"
+                    android:text="Please tell the number of people you would like to join your group"
+                    android:textSize="20sp"
+                    android:id="@+id/activityCreationView2"
+                    android:textStyle="normal"
+                    android:padding="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/time_info"
+                    android:textColor="#02cee5"
+                    android:visibility="gone"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/activityCreationDateTimeLayout"
+               >
+
+
+
+                <EditText
+                    android:layout_width="150dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_gravity="start"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="5dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:singleLine="true"
+                    android:hint="date"
+                    android:textColorHint="#FFFF00"
+                    android:textStyle="bold|italic"
+                    android:textColor="#FFFF00"
+                    android:background="@drawable/textx"
+                    android:id="@+id/activityCreationText4"
+                    />
+
+
+                <EditText
+                    android:layout_width="235dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="50dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:singleLine="true"
+                    android:textColor="#FFFF00"
+                    android:hint="time"
+                    android:layout_toRightOf="@+id/activityCreationText4"
+                    android:textColorHint="#FFFF00"
+                    android:textStyle="bold|italic"
+                    android:background="@drawable/textx"
+                    android:id="@+id/activityCreationText5"
+                    />
+
+
+
+            </RelativeLayout>
+
+
+            <CalendarView
+                android:id="@+id/calendar"
+                android:layout_width="330dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:focusedMonthDateColor="#ffff00"
+                android:background="@drawable/calender_boader"
+                android:visibility="gone"
+                />
+
+
+
+
+            <AnalogClock
+                android:id="@+id/analogClock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone"/>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Please tell the starting time of your activity"
+                android:textSize="20sp"
+                android:textStyle="normal"
+                android:padding="5dp"
+                android:id="@+id/activityCreationView3"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/time_info2"
+                android:textColor="#02cee5"
+                android:visibility="gone"/>
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Please tell the starting date on which you are planing your activity"
+                android:textSize="20sp"
+                android:textStyle="normal"
+                android:padding="5dp"
+                android:id="@+id/activityCreationView4"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/time_info"
+                android:textColor="#02cee5"
+                android:visibility="gone"/>
+
+
+
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="12dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:paddingLeft="10dp"
+                android:textColor="#FFFF00"
+                android:paddingRight="10dp"
+                android:inputType="numberDecimal"
+                android:singleLine="true"
+                android:hint="contant no."
+                android:textColorHint="#FFFF00"
+                android:textStyle="bold|italic"
+                android:background="@drawable/textx"
+                android:id="@+id/activityCreationText6"
+                />
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:id="@+id/activityCreationImage5"
+                android:layout_marginTop="25dp"
+                android:layout_gravity="center"
+                android:src="@drawable/vectorshover"
+
+                />
+
+
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="150dp"
+                android:id="@+id/activityCreationImage"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="25dp"
+                android:src="@drawable/bird"
+                android:onClick="goSubmit"/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>
+

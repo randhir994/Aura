@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#022635">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="VEG"
+                android:textSize="20sp"
+                android:textStyle="bold"
+
+                android:layout_marginBottom="5dp"
+                android:fontFamily="sans-serif-condensed"
+                android:textColor="#ffff00"
+                android:id="@+id/eventFoodText1"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Veg Menu One"
+                    android:layout_marginLeft="3dp"
+                    android:textSize="20sp"
+                    android:textStyle="normal"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textColor="#fff"
+                    android:layout_weight="1"
+                    android:id="@+id/eventFoodText2.1"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="\u20B9 500/ Per Peson"
+                    android:textSize="20sp"
+                    android:textStyle="normal"
+                    android:layout_gravity="end"
+                    android:gravity="center"
+                    android:layout_toRightOf="@+id/eventFoodText2"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textColor="#fff"
+                    android:layout_weight="1"
+                    android:id="@+id/eventFoodText3.1"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Veg Menu Two"
+                    android:layout_marginLeft="3dp"
+                    android:textSize="20sp"
+                    android:textStyle="normal"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textColor="#fff"
+                    android:layout_weight="1"
+                    android:id="@+id/eventFoodText2.2"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="\u20B9 800/ Per Peson"
+                    android:textSize="20sp"
+                    android:textStyle="normal"
+                    android:gravity="center"
+                    android:layout_gravity="end"
+                    android:layout_toRightOf="@+id/eventFoodText2"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textColor="#fff"
+                    android:layout_weight="1"
+                    android:id="@+id/eventFoodText3.2"/>
+
+            </LinearLayout>
+
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NON VEG"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="2dp"
+                android:fontFamily="sans-serif-condensed"
+                android:textColor="#ffff00"
+                android:id="@+id/eventFoodText4"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Non Veg Menu One"
+                    android:layout_marginLeft="3dp"
+                    android:textSize="20sp"
+                    android:textStyle="normal"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textColor="#fff"
+                    android:layout_weight="1"
+                    android:id="@+id/eventFoodText5.1"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="\u20B9 750/ Per Peson"
+                    android:textSize="20sp"
+                    android:textStyle="normal"
+                    android:gravity="center"
+                    android:layout_gravity="end"
+                    android:layout_toRightOf="@+id/eventFoodText2"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textColor="#fff"
+                    android:layout_weight="1"
+                    android:id="@+id/eventFoodText6.1"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Non Veg Menu One"
+                    android:layout_marginLeft="3dp"
+                    android:textSize="20sp"
+                    android:textStyle="normal"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textColor="#fff"
+                    android:layout_weight="1"
+                    android:id="@+id/eventFoodText5.2"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="\u20B9 1000/ Per Peson"
+                    android:textSize="20sp"
+                    android:textStyle="normal"
+                    android:layout_gravity="end"
+                    android:gravity="center"
+                    android:layout_toRightOf="@+id/eventFoodText2"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textColor="#fff"
+                    android:layout_weight="1"
+                    android:id="@+id/eventFoodText6.2"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="*Exclusive of text"
+                android:textSize="10sp"
+                android:layout_marginTop="5dp"
+                android:textColor="#33cccc"
+                android:gravity="end"/>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="5dp"
+                android:id="@+id/eventFoodImage1"
+                android:layout_gravity="center"
+                android:src="@drawable/white_line" />
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CUISINES SERVED"
+                android:textSize="20sp"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:layout_marginTop="15dp"
+                android:fontFamily="sans-serif-condensed"
+                android:textColor="#ffff00"
+                android:id="@+id/eventFoodText7"/>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Indian \t\t Italian \n Thai \t\t Continant"
+                android:textSize="17sp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="150dp"
+                android:textStyle="normal"
+                android:fontFamily="sans-serif-condensed"
+                android:textColor="#ffff"
+                android:id="@+id/eventFoodText8"/>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>

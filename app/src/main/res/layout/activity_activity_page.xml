@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#022635">
+
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:id="@+id/activityPageImage1"
+                    android:layout_marginTop="15dp"
+                    android:layout_gravity="start"
+                    android:onClick="backButton"
+                    android:src="@drawable/arrow" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="87dp"
+                    android:id="@+id/activityPageImage2"
+                    android:layout_gravity="center"
+                    android:src="@drawable/top_item" />
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_below="@id/activityPageImage2">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center|start"
+                        android:layout_weight="0.3">
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="match_parent"
+                            android:id="@+id/activityPageImage3"
+                            android:gravity="center"
+                            android:paddingTop="4dp"
+                            android:paddingBottom="4dp"
+
+                            android:layout_marginLeft="4dp"
+
+                            android:src="@drawable/user_icon" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:text="MADHUR"
+                            android:textSize="18sp"
+                            android:gravity="center"
+
+
+                            android:textStyle="bold"
+                            android:fontFamily="sans-serif-condensed"
+                            android:textColor="#ffff00"
+                            android:id="@+id/activityPageText1"/>
+
+
+
+                    </LinearLayout>
+
+
+
+
+                    <Button
+                        android:layout_width="60dp"
+                        android:layout_height="41dp"
+                        android:text="New Delhi"
+                        android:textSize="18sp"
+                        android:layout_weight="0.3"
+
+                        android:textStyle="bold"
+
+                        android:textColor="#001a00"
+
+                        android:fontFamily="sans-serif-condensed"
+                        android:id="@+id/pageButton1"
+                        android:background="@drawable/round_button_fill"/>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center|end"
+                        android:layout_weight="0.3">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="JULY"
+                            android:textSize="20sp"
+
+
+                            android:textStyle="normal|bold"
+                            android:fontFamily="sans-serif-condensed"
+                            android:textColor="#ffff00"
+                            android:id="@+id/activityPageText2"/>
+
+
+                        <Button
+                            android:layout_width="36dp"
+                            android:layout_height="43dp"
+                            android:text="12"
+                            android:textSize="28sp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+
+                            android:textStyle="bold"
+                            android:textColor="#001a00"
+                            android:fontFamily="sans-serif-condensed"
+                            android:id="@+id/pageButton2"
+                            android:background="@drawable/ring_button"/>
+
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+
+
+            <GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:layout_gravity="center"
+                android:rowCount="3"
+                android:columnCount="2"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="87dp"
+                    android:id="@+id/activityPageImage4"
+                    android:layout_marginBottom="20dp"
+                    android:layout_gravity="center|fill"
+
+                    android:src="@drawable/skating_icon"
+                    android:layout_column="0"
+                    android:layout_row="0" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="87dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_column="1"
+                    android:layout_row="0"
+                    android:id="@+id/activityPageImage5"
+                    android:layout_gravity="center|fill"
+                    android:src="@drawable/bowling" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="87dp"
+                    android:id="@+id/activityPageImage6"
+                    android:layout_gravity="center|fill"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/go_karating"
+                    android:layout_column="0"
+                    android:layout_row="1" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="87dp"
+                    android:layout_column="1"
+                    android:layout_row="1"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/activityPageImage7"
+                    android:layout_gravity="center|fill"
+                    android:src="@drawable/paintball_icon" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="87dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/activityPageImage8"
+                    android:layout_gravity="center|fill"
+                    android:src="@drawable/rock_climbing_icon"
+                    android:layout_column="0"
+                    android:layout_row="2" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="87dp"
+                    android:layout_column="1"
+                    android:layout_row="2"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/activityPageImage9"
+                    android:layout_gravity="center|fill"
+                    android:src="@drawable/pool_icon" />
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="87dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_columnSpan="2"
+                    android:id="@+id/activityPageImage10"
+                    android:layout_gravity="center|fill"
+                    android:src="@drawable/playstaion" />
+
+
+            </GridLayout>
+
+
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="40dp"
+                android:id="@+id/activityPageImage11"
+                android:layout_gravity="center"
+                android:src="@drawable/join_activity_upper" />
+
+
+            <ImageView
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:id="@+id/activityPageImage12"
+                android:layout_gravity="center"
+                android:padding="3dp"
+                android:src="@drawable/join_activity"
+                android:background="@drawable/white_boader"
+                android:onClick="joiningActivityClick"/>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:id="@+id/activityPageImage13"
+                android:layout_gravity="center"
+                android:src="@drawable/going" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="85dp"
+                android:layout_margin="10dp"
+
+                android:id="@+id/activityPageImage14"
+                android:layout_gravity="center"
+                android:src="@drawable/create"
+                android:onClick="createActivityClick"/>
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="5dp"
+                android:id="@+id/activityPageImage15"
+                android:layout_gravity="end"
+                android:src="@drawable/add_more" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,328 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#0f1012">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:id="@+id/collegeEventAvailabeImage1"
+                    android:onClick="backButton"
+                    android:layout_marginTop="15dp"
+                    android:layout_gravity="start"
+                    android:src="@drawable/arrow" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="87dp"
+                    android:id="@+id/collegeEventAvailabeImage2"
+                    android:layout_gravity="center"
+                    android:src="@drawable/top_item" />
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_below="@id/collegeEventAvailabeImage2">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center|start"
+                        android:layout_weight="0.3">
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="match_parent"
+                            android:id="@+id/collegeEventAvailabeImage3"
+                            android:gravity="center"
+                            android:paddingTop="4dp"
+                            android:paddingBottom="4dp"
+
+                            android:layout_marginLeft="4dp"
+
+                            android:src="@drawable/user_icon" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:text="MADHUR"
+                            android:textSize="18sp"
+                            android:gravity="center"
+
+
+                            android:textStyle="bold"
+                            android:fontFamily="sans-serif-condensed"
+                            android:textColor="#ffff00"
+                            android:id="@+id/collegeEventAvailabeText1"/>
+
+
+
+                    </LinearLayout>
+
+
+
+
+                    <Button
+                        android:layout_width="60dp"
+                        android:layout_height="41dp"
+                        android:text="New Delhi"
+                        android:textSize="18sp"
+                        android:layout_weight="0.3"
+
+                        android:textStyle="bold"
+
+                        android:textColor="#001a00"
+
+                        android:fontFamily="sans-serif-condensed"
+                        android:id="@+id/pageButton1"
+                        android:background="@drawable/yellowbox"/>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center|end"
+                        android:layout_weight="0.3">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="JULY"
+                            android:textSize="20sp"
+
+
+                            android:textStyle="normal|bold"
+                            android:fontFamily="sans-serif-condensed"
+                            android:textColor="#ffff00"
+                            android:id="@+id/collegeEventAvailabeText2"/>
+
+
+                        <Button
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:text="12"
+                            android:textSize="28sp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+
+                            android:textStyle="bold"
+                            android:textColor="#001a00"
+                            android:fontFamily="sans-serif-condensed"
+                            android:id="@+id/pageButton2"
+                            android:background="@drawable/ring_button"/>
+
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <ImageView
+    android:layout_width="220dp"
+    android:layout_height="50dp"
+    android:src="@drawable/selectlocstion"
+    android:layout_gravity="center"
+    android:layout_marginTop="30dp" />
+<ImageView
+android:layout_width="280dp"
+android:layout_height="wrap_content"
+android:src="@drawable/blueline"
+android:layout_gravity="center"/>
+<EditText
+android:layout_width="260dp"
+android:layout_marginTop="10dp"
+android:layout_height="wrap_content"
+android:id="@+id/guests"
+android:textAlignment="center"
+android:textColorHint="#ffffff"
+android:hint="Search location here"
+android:background="@drawable/blue_box"
+android:textStyle="italic"
+android:layout_gravity="center"
+android:padding="10dp"
+android:layout_marginBottom="20dp"/>
+<TextView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_marginLeft="50dp"
+android:textSize="20dp"
+android:text="GURGAON"
+    android:fontFamily="sans-serif-condensed"
+android:textColor="#ffffff"
+android:textStyle="bold"
+android:layout_marginBottom="10dp"
+android:focusable="true"
+android:focusableInTouchMode="true"
+android:forceHasOverlappingRendering="false"
+android:textColorHighlight="#1fb5c9"
+android:textColorLink="#1fb5c9" />
+<TextView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_marginLeft="50dp"
+android:textSize="20dp"
+android:text="FARIDABAD"
+    android:fontFamily="sans-serif-condensed"
+android:textColor="#ffffff"
+android:textStyle="bold"
+android:layout_marginBottom="10dp"
+android:focusable="true"
+android:focusableInTouchMode="true"
+android:forceHasOverlappingRendering="false"
+android:textColorHighlight="#1fb5c9"
+android:textColorLink="#1fb5c9" />
+<TextView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_marginLeft="50dp"
+android:textSize="20dp"
+android:text="NOIDA SECTOR 18"
+    android:fontFamily="sans-serif-condensed"
+android:textColor="#ffffff"
+android:textStyle="bold"
+android:layout_marginBottom="10dp"
+android:focusable="true"
+android:focusableInTouchMode="true"
+android:forceHasOverlappingRendering="false"
+android:textColorHighlight="#1fb5c9"
+android:textColorLink="#1fb5c9" />
+<TextView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_marginLeft="50dp"
+android:textSize="20dp"
+android:text="FARIDABAD"
+android:textColor="#ffffff"
+    android:fontFamily="sans-serif-condensed"
+android:textStyle="bold"
+android:layout_marginBottom="10dp"
+android:focusable="true"
+android:focusableInTouchMode="true"
+android:forceHasOverlappingRendering="false"
+android:textColorHighlight="#1fb5c9"
+android:textColorLink="#1fb5c9" />
+<TextView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_marginLeft="50dp"
+android:textSize="20dp"
+android:text="GURGAON SECTOR 2"
+    android:fontFamily="sans-serif-condensed"
+android:textColor="#FF02CBE3"
+android:textStyle="bold"
+android:layout_marginBottom="10dp"
+android:focusable="true"
+android:focusableInTouchMode="true"
+android:forceHasOverlappingRendering="false"
+android:textColorHighlight="#1fb5c9"
+android:textColorLink="#1fb5c9" />
+<TextView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_marginLeft="50dp"
+android:textSize="20dp"
+android:text="KAILASH COLONY"
+    android:fontFamily="sans-serif-condensed"
+android:textColor="#ffffff"
+android:textStyle="bold"
+android:layout_marginBottom="10dp"
+android:focusable="true"
+android:focusableInTouchMode="true"
+android:forceHasOverlappingRendering="false"
+android:textColorHighlight="#1fb5c9"
+android:textColorLink="#1fb5c9" />
+<TextView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_marginLeft="50dp"
+android:textSize="20dp"
+android:text="SAROJANI NAGAR"
+android:textColor="#ffffff"
+android:textStyle="bold"
+    android:fontFamily="sans-serif-condensed"
+android:layout_marginBottom="10dp"
+android:focusable="true"
+android:focusableInTouchMode="true"
+android:forceHasOverlappingRendering="false"
+android:textColorHighlight="#1fb5c9"
+android:textColorLink="#1fb5c9" />
+<TextView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_marginLeft="50dp"
+android:textSize="20dp"
+    android:fontFamily="sans-serif-condensed"
+android:text="KIRTI NAGAR"
+android:textColor="#ffffff"
+android:textStyle="bold"
+android:layout_marginBottom="10dp"
+android:focusable="true"
+android:focusableInTouchMode="true"
+android:forceHasOverlappingRendering="false"
+android:textColorHighlight="#1fb5c9"
+android:textColorLink="#1fb5c9" />
+<TextView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_marginLeft="50dp"
+android:textSize="20dp"
+android:text="MOTI NAGAR"
+    android:fontFamily="sans-serif-condensed"
+android:textColor="#ffffff"
+android:textStyle="bold"
+android:layout_marginBottom="10dp"
+android:focusable="true"
+android:focusableInTouchMode="true"
+android:forceHasOverlappingRendering="false"
+android:textColorHighlight="#1fb5c9"
+android:textColorLink="#1fb5c9" />
+<TextView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_marginLeft="50dp"
+android:textSize="20dp"
+android:text="RAJOURI GARDEN"
+    android:fontFamily="sans-serif-condensed"
+android:textColor="#ffffff"
+android:textStyle="bold"
+android:layout_marginBottom="10dp"
+android:focusable="true"
+android:focusableInTouchMode="true"
+android:forceHasOverlappingRendering="false"
+android:textColorHighlight="#1fb5c9"
+android:textColorLink="#1fb5c9" />
+<ImageView
+android:layout_width="100dp"
+android:layout_height="wrap_content"
+android:id="@+id/imageView8"
+android:layout_marginTop="100dp"
+android:src="@drawable/filter"
+android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+    </ScrollView>
+
+    </LinearLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#022635">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TERMS &amp; CONDITIONS"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="sans-serif-condensed"
+                android:textColor="#ffff00"
+                android:id="@+id/eventFoodText1"/>
+
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nonLorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nonLorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nonLorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non\n\nconsectetur adipiscing elit. Ut nonLorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nonLorem ipsum dolor sit amet"
+                android:textSize="17sp"
+
+
+
+                android:textStyle="normal"
+                android:fontFamily="sans-serif-condensed"
+                android:textColor="#fff"
+                android:id="@+id/eventIntroText1"/>
+        </LinearLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>

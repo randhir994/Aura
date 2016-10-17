@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#022635">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+
+       <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:text="Valet Parking\nDJ\Catering\nPower Backup\nPA/Sound System\nStage\nSwimmind Pool"
+        android:textSize="20sp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="10dp"
+        android:textStyle="normal"
+
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="#ffff"
+        android:id="@+id/eventFacilityText1"/>
+
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="5dp"
+                android:id="@+id/eventFacilityImage1"
+                android:layout_gravity="center"
+                android:src="@drawable/white_line" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PAYMENT ACCEPTED"
+                android:textSize="20sp"
+                android:layout_gravity="start"
+                android:textStyle="bold"
+                android:layout_marginTop="15dp"
+                android:fontFamily="sans-serif-condensed"
+                android:textColor="#ffff00"
+                android:id="@+id/eventFacilityText2"/>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:text="Cash\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t Card\nCheque\t\t\t\t\t\t\t\t\t\t\t\t\t\tAccount transfer"
+                android:textSize="20sp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="10dp"
+                android:textStyle="normal"
+
+
+                android:fontFamily="sans-serif-condensed"
+                android:textColor="#ffff"
+                android:id="@+id/eventFacilityText3"/>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+    </RelativeLayout>
+
+
+

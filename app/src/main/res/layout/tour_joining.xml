@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="#022635"
+
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/adventurebegins"/>
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView4"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/vectorshover" />
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/name"
+            android:layout_marginTop="40dp"
+            android:hint="name"
+            android:padding="10dp"
+            android:textColorHint="#fffb08"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/textstyles"
+            android:textColor="#db6234"
+
+
+
+            android:textStyle="bold|italic" />
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/age"
+            android:layout_marginTop="10dp"
+            android:hint="age"
+            android:padding="10dp"
+            android:textColorHint="#fffb08"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/textstyles"
+            android:textColor="#db6234"
+
+
+
+            android:textStyle="bold|italic" />
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/email"
+            android:layout_marginTop="10dp"
+            android:hint="email id"
+            android:padding="10dp"
+            android:textColorHint="#fffb08"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/textstyles"
+
+
+
+
+            android:textStyle="bold|italic" />
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner"
+
+            android:layout_marginTop="10dp"
+            android:background="@drawable/yellowbox"
+            android:layout_gravity="center_horizontal"
+            android:spinnerMode="dropdown"
+            android:layout_alignParentEnd="false" />
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignRight="@+id/spinner"
+        android:layout_centerInParent="true"
+        android:layout_margin="5dp"
+        android:src="@drawable/g"
+
+        />
+        </RelativeLayout>
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/identity"
+            android:layout_marginTop="10dp"
+            android:hint="identity proof no."
+            android:padding="10dp"
+            android:textColorHint="#fffb08"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/textstyles"
+            android:textStyle="bold|italic" />
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="50dp"
+            android:src="@drawable/vectorshover"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="tourClick"
+
+            android:layout_marginBottom="30dp"
+            android:src="@drawable/bluebird"/>
+
+
+    </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

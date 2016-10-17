@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0f1012">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:id="@+id/collegeEventAvailabeImage1"
+                    android:onClick="backButton"
+                    android:layout_marginTop="15dp"
+                    android:layout_gravity="start"
+                    android:src="@drawable/arrow" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="87dp"
+                    android:id="@+id/collegeEventAvailabeImage2"
+                    android:layout_gravity="center"
+                    android:src="@drawable/top_item" />
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_below="@id/collegeEventAvailabeImage2">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center|start"
+                        android:layout_weight="0.3">
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="match_parent"
+                            android:id="@+id/collegeEventAvailabeImage3"
+                            android:gravity="center"
+                            android:paddingTop="4dp"
+                            android:paddingBottom="4dp"
+
+                            android:layout_marginLeft="4dp"
+
+                            android:src="@drawable/user_icon" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:text="MADHUR"
+                            android:textSize="18sp"
+                            android:gravity="center"
+
+
+                            android:textStyle="bold"
+                            android:fontFamily="sans-serif-condensed"
+                            android:textColor="#ffff00"
+                            android:id="@+id/collegeEventAvailabeText1"/>
+
+
+
+                    </LinearLayout>
+
+
+
+
+                    <Button
+                        android:layout_width="60dp"
+                        android:layout_height="41dp"
+                        android:text="New Delhi"
+                        android:textSize="18sp"
+                        android:layout_weight="0.3"
+
+                        android:textStyle="bold"
+
+                        android:textColor="#001a00"
+
+                        android:fontFamily="sans-serif-condensed"
+                        android:id="@+id/pageButton1"
+                        android:background="@drawable/yellowbox"/>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center|end"
+                        android:layout_weight="0.3">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="JULY"
+                            android:textSize="20sp"
+
+
+                            android:textStyle="normal|bold"
+                            android:fontFamily="sans-serif-condensed"
+                            android:textColor="#ffff00"
+                            android:id="@+id/collegeEventAvailabeText2"/>
+
+
+                        <Button
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:text="12"
+                            android:textSize="28sp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+
+                            android:textStyle="bold"
+                            android:textColor="#001a00"
+                            android:fontFamily="sans-serif-condensed"
+                            android:id="@+id/pageButton2"
+                            android:background="@drawable/ring_button"/>
+
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+<GridLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:columnCount="2"
+android:layout_gravity="center"
+    android:layout_marginTop="20dp"
+    android:orientation="vertical">
+    <ImageView
+        android:src="@drawable/morning_trip"
+        android:layout_column="0"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:layout_row="0"
+        android:layout_columnWeight="0.5"
+        android:layout_marginBottom="20dp"
+
+        />
+
+
+
+    <ImageView
+        android:src="@drawable/noon_trip"
+        android:layout_columnWeight="0.5"
+        android:layout_marginBottom="20dp"
+        android:layout_column="1"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:layout_row="0"
+        />
+    <ImageView
+        android:src="@drawable/day_trip"
+        android:layout_columnWeight="0.5"
+        android:layout_marginBottom="20dp"
+        android:layout_width="100dp"
+        android:layout_column="1"
+        android:layout_height="150dp"
+        android:layout_row="1"
+        />
+    <ImageView
+        android:src="@drawable/evening_trip"
+        android:layout_columnWeight="0.5"
+        android:layout_column="0"
+        android:layout_width="100dp"
+        android:layout_marginBottom="20dp"
+
+        android:layout_height="150dp"
+        android:layout_row="1"
+        />
+
+    <ImageView
+        android:src="@drawable/two_day_trip"
+        android:layout_columnWeight="0.5"
+        android:layout_width="100dp"
+        android:layout_column="0"
+        android:layout_height="150dp"
+        android:layout_row="2"
+        android:layout_marginBottom="20dp"
+        />
+    <ImageView
+        android:src="@drawable/long_trip"
+        android:layout_columnWeight="0.5"
+        android:layout_column="1"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:layout_marginBottom="20dp"
+        android:layout_row="2"
+        />
+    <ImageView
+        android:src="@drawable/ongoing_tour"
+        android:layout_columnWeight="0.5"
+        android:layout_column="0"
+        android:layout_columnSpan="2"
+        android:layout_width="170dp"
+        android:layout_height="185dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:onClick="ongoingTour"
+        android:layout_row="3"
+        />
+
+
+
+
+</GridLayout>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="240dp"
+                android:layout_gravity="center"
+                android:onClick="tourClick"
+                android:src="@drawable/create_new_tour"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/see_all_previous"
+                android:layout_gravity="center"
+                android:layout_marginRight="50dp"
+                android:layout_marginLeft="50dp"
+                />
+
+
+
+
+
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>

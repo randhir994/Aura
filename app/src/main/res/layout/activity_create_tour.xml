@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#022635"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView"
+
+                android:src="@drawable/tourcreation"
+                android:layout_margin="30dp" />
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView1"
+                android:layout_gravity="center"
+
+                android:src="@drawable/vectorshover"
+                />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="eg: the himachal walk"
+                    android:textColor="#f5989f"
+                    android:id="@+id/titleInfo"
+                    android:visibility="gone"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/pink_box"/>
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/shipTitle"
+                    android:hint="Ship Title"
+                    android:fontFamily="cursive"
+                    android:textColorHint="#fffb08"
+                    android:layout_gravity="center"
+
+                    android:background="@drawable/textstyles"
+                    android:layout_marginTop="10dp"
+                    android:padding="10dp"
+                    android:textStyle="bold"
+                    android:paddingTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:textColor="#ffffff" />
+
+            </RelativeLayout>
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editText2"
+                android:hint="Orgonizer name"
+                android:textColor="#ffffff"
+                android:fontFamily="cursive"
+                android:textColorHint="#fffb08"
+                android:layout_gravity="center"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/textstyles"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:paddingTop="5dp"
+                android:layout_marginBottom="5dp" />
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editText3"
+                android:hint="Contact no."
+                android:fontFamily="cursive"
+                android:textColor="#ffffff"
+                android:textColorHint="#fffb08"
+                android:layout_gravity="center"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/textstyles"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:paddingTop="5dp"
+                android:layout_marginBottom="5dp" />
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editText4"
+                android:textColor="#ffffff"
+                android:hint="\nDescription\n"
+                android:fontFamily="cursive"
+                android:textColorHint="#fffb08"
+                android:layout_gravity="center"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/textstyles"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:layout_marginBottom="5dp" />
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/startingDate"
+                    android:hint="Ending date"
+                    android:textColor="#ffffff"
+                    android:textColorHint="#fffb08"
+                    android:layout_gravity="center"
+                    android:background="@drawable/textstyles"
+                    android:layout_marginTop="10dp"
+                    android:padding="10dp"
+                    android:textStyle="bold"
+                    android:fontFamily="cursive"
+
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="10dp"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/endingDate"
+                    android:hint="Ending date"
+                    android:fontFamily="cursive"
+                    android:textColor="#ffffff"
+                    android:textColorHint="#fffb08"
+                    android:layout_gravity="center"
+                    android:background="@drawable/textstyles"
+                    android:layout_marginTop="10dp"
+                    android:padding="10dp"
+                    android:textStyle="bold"
+                    android:paddingTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="50dp" />
+            </LinearLayout>
+            <RelativeLayout
+                android:id="@+id/calenderlayout"
+                android:layout_width="wrap_content"
+                android:visibility="gone"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/blue"
+                    android:padding="15dp"
+                    android:text="Please tell the end of your journey"
+                    android:background="@drawable/blue_box"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="330dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                   />
+                <CalendarView
+                android:id="@+id/calendarView"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusedMonthDateColor="#ffff00"
+                android:background="@drawable/yellowbox"
+                android:transitionGroup="false"
+                android:backgroundTint="#fffb2d" />
+
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="25dp">
+
+
+
+                <TextView
+
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/blue_box"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="15dp"
+                    android:visibility="gone"
+                    android:text="Please tell the starting date of your Journey"
+                    android:id="@+id/startEndInfo"
+                    android:textColor="@color/blue"
+                    android:padding="15dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="25dp" />
+
+
+                <EditText
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Starting From"
+                    android:textStyle="bold"
+                    android:background="@drawable/textstyles"
+                    android:id="@+id/startingFrom"
+                    android:padding="10dp"
+                    android:fontFamily="cursive"
+                    android:textColorHint="#fffb08"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+
+                    />
+
+                <EditText
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Ending On"
+                    android:textColorHint="#fffb08"
+                    android:fontFamily="cursive"
+                    android:padding="10dp"
+                    android:textStyle="bold|italic"
+                    android:background="@drawable/textstyles"
+                    android:id="@+id/endOn"
+                    android:layout_alignBottom="@+id/textView"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+
+
+
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="25dp"
+                android:orientation="horizontal">
+                <android.support.v7.widget.AppCompatCheckBox
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+
+
+
+                    android:buttonTint="#fffb08" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/thenreturnto"/>
+            </LinearLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="50dp"
+    android:layout_marginRight="50dp">
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="eg: Car, Train, Bike"
+        android:id="@+id/modeOfTravelInfo"
+        android:padding="15dp"
+        android:visibility="gone"
+        android:textColor="#d68a8f"
+        android:background="@drawable/pink_box"
+        />
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/modeOfTravel"
+                android:hint=" Mode of travel"
+                android:textColor="#ffffff"
+                android:padding="10dp"
+                android:fontFamily="cursive"
+                android:textColorHint="#fffb08"
+                android:layout_gravity="center"
+
+                android:background="@drawable/textstyles"
+
+                android:paddingLeft="10dp"
+                android:textStyle="bold"
+                android:paddingTop="5dp"
+                android:layout_marginBottom="10dp" />
+</RelativeLayout>
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="50dp"
+                android:layout_marginLeft="50dp"
+                android:text="Remember \nDo contact your fellow traveller/s to discus about the travel arrangemnet and necessities. "
+                android:textColor="#d68a8f" />
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editText10"
+                android:hint="Expected cost per person"
+                android:textColor="#ffffff"
+                android:fontFamily="cursive"
+                android:textColorHint="#fffb08"
+                android:layout_gravity="center"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/textstyles"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:layout_marginBottom="30dp" />
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="center"
+
+                android:src="@drawable/vectorshover"
+                />
+            <ImageView
+                android:layout_marginTop="30dp"
+                android:layout_width="200dp"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:src="@drawable/bluebird"
+                android:onClick="tourCreated"/>
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#022635">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="25dp"
+                android:background="@drawable/white_boader">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:text="MR. AND MRS. FUNNYBONES\nMARRIAGE ANIVERSARY"
+                android:textSize="20sp"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-condensed"
+                android:textColor="#ffff"
+                android:id="@+id/eventPicText1"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:text="10\nAUGUST"
+                android:textSize="20sp"
+                android:layout_weight="3"
+
+                android:textStyle="bold"
+
+                android:fontFamily="sans-serif-condensed"
+                android:textColor="#ffff"
+                android:id="@+id/eventPicText2"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="5dp"
+                android:id="@+id/eventPicImage1"
+                android:layout_gravity="center"
+                android:src="@mipmap/ic_launcher" />
+
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="5dp"
+                android:id="@+id/eventPicImage2"
+                android:layout_gravity="center"
+                android:src="@mipmap/ic_launcher" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="5dp"
+                android:id="@+id/eventPicImage3"
+                android:layout_gravity="center"
+                android:src="@mipmap/ic_launcher" />
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/white_boader">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:text="ANAND BIRTHDAY"
+                    android:textSize="20sp"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textColor="#ffff"
+                    android:id="@+id/eventPicText3"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:text="6 AUGUST"
+                    android:textSize="20sp"
+                    android:layout_weight="3"
+
+                    android:textStyle="bold"
+
+                    android:fontFamily="sans-serif-condensed"
+                    android:textColor="#ffff"
+                    android:id="@+id/eventPicText4"/>
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="5dp"
+                android:id="@+id/eventPicImage4"
+                android:layout_gravity="center"
+                android:src="@mipmap/ic_launcher" />
+
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="5dp"
+                android:id="@+id/eventPicImage5"
+                android:layout_gravity="center"
+                android:src="@mipmap/ic_launcher" />
+
+
+        </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>

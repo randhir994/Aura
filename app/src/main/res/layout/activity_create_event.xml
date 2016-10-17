@@ -1,0 +1,552 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#022634">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:id="@+id/createEventImage1"
+                    android:layout_marginTop="15dp"
+                    android:layout_gravity="start"
+                    android:onClick="backButton"
+                    android:src="@drawable/arrow" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="87dp"
+                    android:id="@+id/createEventImage2"
+                    android:layout_gravity="center"
+                    android:src="@drawable/top_item" />
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_below="@id/createEventImage2">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center|start"
+                        android:layout_weight="0.3">
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="match_parent"
+                            android:id="@+id/createEventImage3"
+                            android:gravity="center"
+                            android:paddingTop="4dp"
+                            android:paddingBottom="4dp"
+
+                            android:layout_marginLeft="4dp"
+
+                            android:src="@drawable/user_icon" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:text="MADHUR"
+                            android:textSize="18sp"
+                            android:gravity="center"
+
+
+                            android:textStyle="bold"
+                            android:fontFamily="sans-serif-condensed"
+                            android:textColor="#ffff00"
+                            android:id="@+id/createEventText1"/>
+
+
+
+                    </LinearLayout>
+
+
+
+
+                    <Button
+                        android:layout_width="60dp"
+                        android:layout_height="41dp"
+                        android:text="New Delhi"
+                        android:textSize="18sp"
+                        android:layout_weight="0.3"
+
+                        android:textStyle="bold"
+
+                        android:textColor="#001a00"
+
+                        android:fontFamily="sans-serif-condensed"
+                        android:id="@+id/createEventButton1"
+                        android:background="@drawable/round_button_fill"/>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center|end"
+                        android:layout_weight="0.3">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="JULY"
+                            android:textSize="20sp"
+
+
+                            android:textStyle="normal|bold"
+                            android:fontFamily="sans-serif-condensed"
+                            android:textColor="#ffff00"
+                            android:id="@+id/createEventText2"/>
+
+
+                        <Button
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:text="12"
+                            android:textSize="28sp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+
+                            android:textStyle="bold"
+                            android:textColor="#001a00"
+                            android:fontFamily="sans-serif-condensed"
+                            android:id="@+id/createEventButton2"
+                            android:background="@drawable/ring_button"/>
+
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="15dp"
+                android:paddingTop="10dp"
+                >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="SOCIAL"
+                    android:layout_margin="1dp"
+                    android:textSize="35sp"
+
+                    android:gravity="start"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textColor="#ffff00"
+                    android:id="@+id/createEventText3"/>
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="80dp"
+                    android:onClick="nextActivity"
+                    android:visibility="gone"
+                    android:id="@+id/createEventLayout1"
+                    >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="KITTY PARTY"
+
+                        android:textSize="33sp"
+                        android:textStyle="bold"
+                        android:fontFamily="sans-serif-condensed"
+                        android:textColor="#ffff00"
+                        android:id="@+id/createEventText3.1"/>
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="COCKTAIL PARTY"
+
+                        android:textSize="33sp"
+                        android:textStyle="bold"
+                        android:fontFamily="sans-serif-condensed"
+                        android:textColor="#ffff00"
+                        android:id="@+id/createEventText3.2"/>
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="BACHELOR NIGHT"
+
+                        android:textSize="33sp"
+                        android:textStyle="bold"
+                        android:fontFamily="sans-serif-condensed"
+                        android:textColor="#ffff00"
+                        android:id="@+id/createEventText3.3"/>
+
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="WEDDINGS"
+                    android:textSize="35sp"
+                    android:gravity="start"
+                    android:textStyle="bold"
+                    android:layout_margin="1dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textColor="#ffff00"
+                    android:id="@+id/createEventText4"/>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="80dp"
+                    android:visibility="gone"
+                    android:id="@+id/createEventLayout2"
+                    >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="ROKA CEREMONY"
+
+                        android:textSize="33sp"
+                        android:textStyle="bold"
+                        android:fontFamily="sans-serif-condensed"
+                        android:textColor="#ffff00"
+                        android:id="@+id/createEventText4.1"/>
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="ENGAGEMENT"
+
+                        android:textSize="33sp"
+                        android:textStyle="bold"
+                        android:fontFamily="sans-serif-condensed"
+                        android:textColor="#ffff00"
+                        android:id="@+id/createEventText4.2"/>
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="SANGEET/ MEHNDI"
+
+                        android:textSize="33sp"
+                        android:textStyle="bold"
+                        android:fontFamily="sans-serif-condensed"
+                        android:textColor="#ffff00"
+                        android:id="@+id/createEventText4.3"/>
+
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="WEDDING"
+
+                        android:textSize="33sp"
+                        android:textStyle="bold"
+                        android:fontFamily="sans-serif-condensed"
+                        android:textColor="#ffff00"
+                        android:id="@+id/createEventText4.4"/>
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="DESTINATION WEDDING"
+
+                        android:textSize="33sp"
+                        android:textStyle="bold"
+                        android:fontFamily="sans-serif-condensed"
+                        android:textColor="#ffff00"
+                        android:id="@+id/createEventText4.5"/>
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="MARRIAGE RECEPTION"
+
+                        android:textSize="33sp"
+                        android:textStyle="bold"
+                        android:fontFamily="sans-serif-condensed"
+                        android:textColor="#ffff00"
+                        android:id="@+id/createEventText4.6"/>
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="ANIVERSSARY"
+
+                        android:textSize="33sp"
+                        android:textStyle="bold"
+                        android:fontFamily="sans-serif-condensed"
+                        android:textColor="#ffff00"
+                        android:id="@+id/createEventText4.7"/>
+
+
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="BIRTHDAYS"
+                    android:textSize="35sp"
+                    android:gravity="start"
+                    android:layout_margin="1dp"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textColor="#ffff00"
+                    android:id="@+id/createEventText5"/>
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="80dp"
+                    android:visibility="gone"
+                    android:id="@+id/createEventLayout3"
+
+                    >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="KID'S B'DAY PARTY"
+
+                        android:textSize="33sp"
+                        android:textStyle="bold"
+                        android:fontFamily="sans-serif-condensed"
+                        android:textColor="#ffff00"
+                        android:id="@+id/createEventText5.1"/>
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="BABY SHOWER"
+
+                        android:textSize="33sp"
+                        android:textStyle="bold"
+                        android:fontFamily="sans-serif-condensed"
+                        android:textColor="#ffff00"
+                        android:id="@+id/createEventText5.2"/>
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="BIRTHDAY PARTY"
+
+                        android:textSize="33sp"
+                        android:textStyle="bold"
+                        android:fontFamily="sans-serif-condensed"
+                        android:textColor="#ffff00"
+                        android:id="@+id/createEventText5.3"/>
+
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="NAMING CEREMONY"
+
+                        android:textSize="33sp"
+                        android:textStyle="bold"
+                        android:fontFamily="sans-serif-condensed"
+                        android:textColor="#ffff00"
+                        android:id="@+id/createEventText5.4"/>
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="STUDENTS"
+                    android:textSize="35sp"
+                    android:layout_margin="1dp"
+
+                    android:gravity="start"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textColor="#ffff00"
+                    android:id="@+id/createEventText6"/>
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="80dp"
+                    android:visibility="gone"
+                    android:id="@+id/createEventLayout4"
+
+                    >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="FAREWELL PARTY"
+
+                        android:textSize="33sp"
+                        android:textStyle="bold"
+                        android:fontFamily="sans-serif-condensed"
+                        android:textColor="#ffff00"
+                        android:id="@+id/createEventText6.1"/>
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="FRESHER PARTY"
+                        android:textSize="33sp"
+                        android:textStyle="bold"
+                        android:fontFamily="sans-serif-condensed"
+                        android:textColor="#ffff00"
+                        android:id="@+id/createEventText6.2"/>
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="REUNION PARTY"
+
+                        android:textSize="33sp"
+                        android:textStyle="bold"
+                        android:fontFamily="sans-serif-condensed"
+                        android:textColor="#ffff00"
+                        android:id="@+id/createEventText6.3"/>
+
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="SEMINARS"
+
+                        android:textSize="33sp"
+                        android:textStyle="bold"
+                        android:fontFamily="sans-serif-condensed"
+                        android:textColor="#ffff00"
+                        android:id="@+id/createEventText6.4"/>
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="PARTY"
+                    android:layout_margin="1dp"
+                    android:textSize="35sp"
+
+                    android:gravity="start"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textColor="#ffff00"
+                    android:id="@+id/createEventText7"/>
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="80dp"
+                    android:layout_marginBottom="50dp"
+                    android:visibility="gone"
+                    android:id="@+id/createEventLayout5"
+                    >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="CHRISTMAS PARTY"
+
+                        android:textSize="33sp"
+                        android:textStyle="bold"
+                        android:fontFamily="sans-serif-condensed"
+                        android:textColor="#ffff00"
+                        android:id="@+id/createEventText7.1"/>
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="NEW YEAR'S EVE PARTY"
+
+                        android:textSize="33sp"
+                        android:textStyle="bold"
+                        android:fontFamily="sans-serif-condensed"
+                        android:textColor="#ffff00"
+                        android:id="@+id/createEventText7.2"/>
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="VALENTINE'S DAY PARTY"
+
+                        android:textSize="33sp"
+                        android:textStyle="bold"
+                        android:fontFamily="sans-serif-condensed"
+                        android:textColor="#ffff00"
+                        android:id="@+id/createEventText7.3"/>
+
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="MUSIC CONCERTS"
+
+                        android:textSize="33sp"
+                        android:textStyle="bold"
+                        android:fontFamily="sans-serif-condensed"
+                        android:textColor="#ffff00"
+                        android:id="@+id/createEventText7.4"/>
+
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="HOLY PARTY"
+
+                        android:textSize="33sp"
+                        android:textStyle="bold"
+                        android:fontFamily="sans-serif-condensed"
+                        android:textColor="#ffff00"
+                        android:id="@+id/createEventText7.5"/>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

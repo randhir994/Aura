@@ -1,0 +1,132 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#022635">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="MADHUR"
+                android:id="@+id/textView"
+                android:textSize="50dp"
+
+                android:layout_gravity="center"
+                android:layout_below="@+id/scrollView"
+                android:layout_centerHorizontal="true"
+                android:textColor="#fffa07"
+                android:layout_marginTop="50dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView17"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/electr"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="50dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Edit Profile"
+                android:id="@+id/textView2"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#fffa07"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:onClick="editProfile"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sign Out"
+                android:id="@+id/textView3"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#fffa07"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView18"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/electr"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="45dp" />
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="240dp"
+
+                android:src="@drawable/startcreating"
+                android:layout_gravity="center"/>
+           <LinearLayout
+
+              android:orientation="horizontal"
+               android:layout_gravity="center"
+               android:layout_width="200dp"
+               android:layout_height="wrap_content">
+               <ImageView
+                   android:layout_width="wrap_content"
+                   android:layout_height="64dp"
+                   android:src="@drawable/createtour"
+                   android:onClick="createTour"
+                   android:layout_weight="1"
+
+                   />
+               <ImageView
+
+                   android:layout_width="150dp"
+                   android:layout_height="64dp"
+                   android:layout_weight="1"
+                   android:layout_marginLeft="5dp"
+                   android:onClick="createActivty"
+
+
+
+                   android:src="@drawable/createactivity"/>
+           </LinearLayout>
+            <TextView
+                android:text="SEE PREVIOUS TOURS/ACTIVITY"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="200dp"
+                android:layout_marginBottom="15dp"
+                android:textColor="#0badc0"
+                android:textSize="18dp"
+                android:onClick="seePreviousActivity"/>
+            <TextView
+                android:text="NEW DELHI @ AURA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+
+                android:textColor="#fffa07"
+                android:textSize="18dp" />
+            <TextView
+                android:text="2015 MMXV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+
+                android:textColor="#fffa07"
+                android:textSize="18dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>
